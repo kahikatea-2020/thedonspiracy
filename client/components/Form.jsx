@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {getImage} from '../api'
+
 class Form extends React.Component {
   constructor (props) {
     super(props)
@@ -25,7 +27,7 @@ class Form extends React.Component {
       verbfuture: ''
     }
     this.handleChange = this.handleChange.bind(this)
-    // this.addWidget = this.addWidget.bind(this)
+    this.createArticle = this.createArticle.bind(this)
   }
 
   handleChange (e) {
@@ -34,10 +36,10 @@ class Form extends React.Component {
     })
   }
 
-  // addWidget (e) {
-  //   appendWidget(this.state)
-  //     .then(() => this.props.refreshList())
-  // }
+  createArticle (e) {
+    getImage(this.state.pln2)
+      .then(imgSrc => this.props.generateImage(imgSrc, this.state))
+  }
 
   render () {
     return (

@@ -15,8 +15,8 @@ export const getImage = (imageName) => {
       .get('/api/v1/image')
       .query({image: imageName})
       //optional below
-      .then(res => {
-        return res // find out what res is??
+      .then(imgSrc => {
+        return imgSrc
       })
   )
 }
