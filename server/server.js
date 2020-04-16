@@ -7,6 +7,6 @@ server.use(express.urlencoded({ extended: false }))
 server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
 
-server.user('api/v1/madlibs')
+server.user('api/v1/madlibs', require('./routes/madlibs'))
 
 module.exports = server
