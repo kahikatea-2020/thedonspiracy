@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {getImage} from '../api'
+import { getImage } from '../api'
 
 class Form extends React.Component {
   constructor (props) {
@@ -38,11 +38,12 @@ class Form extends React.Component {
 
   createArticle (e) {
     getImage(this.state.pln2)
-      .then(imgSrc => this.props.generateImage(imgSrc, this.state))
+      .then(imgSrc => this.props.generateArticle(imgSrc, this.state))
   }
 
   render () {
     return (
+      <div className="formBody">
       <div className='create-article'>
         <form>
           <p><input placeholder='Adjective' name='adj1'
@@ -123,6 +124,7 @@ class Form extends React.Component {
           /></p>
           <button type='button' onClick={this.createArticle}>Write your article!</button>
         </form>
+      </div>
       </div>
     )
   }
