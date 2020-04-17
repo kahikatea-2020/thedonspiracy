@@ -54,7 +54,7 @@ class Form extends React.Component {
           <img src="/images/notepad.png" />
           <div className='container'>
             <form>
-             <p><input placeholder='Your Name' name='author'
+              <p><input placeholder='Your Name' name='author'
                 onChange={this.handleChange}
                 value={this.state.author}
               /></p>

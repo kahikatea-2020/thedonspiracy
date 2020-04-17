@@ -20,3 +20,9 @@ export const getImage = (imageName) => {
       })
   )
 }
+
+export const generateWord = (type) => {
+  return request
+    .get('/api/v1/words')
+    .query({ word: type })
+}
