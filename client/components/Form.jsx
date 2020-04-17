@@ -50,6 +50,8 @@ class Form extends React.Component {
       </div>
       <div className="formBody">
         <div className='create-article'>
+          <div className="notepad">
+          <img src="/images/notepad.png" />
           <div className='container'>
             <form>
              <p><input placeholder='Your Name' name='author'
@@ -136,6 +138,7 @@ class Form extends React.Component {
                 <button className='myButton' type='button' onClick={this.createArticle}>Write your article!</button>
               </div>
             </form>
+          </div>
           </div>
         </div>
       </div>

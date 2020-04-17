@@ -89,21 +89,35 @@ background: linear-gradient(90deg, rgba(240,11,11,1) 0%, rgba(255,154,0,1) 17%, 
 
 .formBody {
     background-color: black;
-    background-image: url("/images/notepad.png");
-    background-size: 20%;
-    background-repeat: no-repeat;
 }
 
 .container {
     display: flex;
     justify-content: center;
+    z-index: 0;
+    position: absolute;
+    margin-top: 60px;
+}
+
+.notepad {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.notepad img{
+    height: 900px;
+    width: auto;
+
 }
 
 input {
     width: 300px;
-    height: 30px;
+    height: 20px;
     border-radius: 5px;
-    color: black
+    color: black;
+    margin-bottom: -10px
 }
 
 button {
