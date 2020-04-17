@@ -7,6 +7,9 @@ class ArticleBody extends React.Component {
       <div className="pageBody">
         <div className="articleSideBar">
           <img src="/images/sidebar-ad.png" />
+          <div className="mostPop">
+          <img src="/images/Mostpopular.png" />
+          </div>
         </div>
         <div className="articleBodyDiv">
           <h1 className="headLine">Enspiral Dev Academy Exposed For Suspicious Activities</h1>
