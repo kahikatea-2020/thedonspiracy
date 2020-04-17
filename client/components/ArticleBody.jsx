@@ -9,9 +9,11 @@ class ArticleBody extends React.Component {
           <img src="/images/sidebar-ad.png" />
         </div>
         <div className="articleBodyDiv">
-          <img src={image} alt={image} />
           <h1 className="headLine">Enspiral Dev Academy Exposed For Suspicious Activities</h1>
           <h2 className="authorName">Author: {words.author} </h2>
+          <div className="articleImage">
+            <img src={image} alt={image} />
+          </div>
           <p className="paragraph"> Breaking news! Students at Enspiral Dev Academy have noticed some {words.adj1} goings on surrounding their teacher Don Smith. Smith has been suspected of receiving {words.pln1} from the linux foundation in exchange for pushing the {words.adj2} agenda of the Mozilla Corporation.
           </p>
           <p className="paragraph">

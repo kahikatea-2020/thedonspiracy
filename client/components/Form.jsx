@@ -33,7 +33,7 @@ class Form extends React.Component {
 
   handleChange (e) {
     this.setState({
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value.toLowerCase()
     })
   }
 
@@ -52,7 +52,7 @@ class Form extends React.Component {
         <div className='create-article'>
           <div className='container'>
             <form>
-              <p><input placeholder='Your Name' name='author'
+             <p><input placeholder='Your Name' name='author'
                 onChange={this.handleChange}
                 value={this.state.author}
               /></p>
@@ -132,7 +132,9 @@ class Form extends React.Component {
                 onChange={this.handleChange}
                 value={this.state.pln3}
               /></p>
-              <button type='button' onClick={this.createArticle}>Write your article!</button>
+              <div className='btnContainer'>
+                <button className='myButton' type='button' onClick={this.createArticle}>Write your article!</button>
+              </div>
             </form>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import ArticleBody from './ArticleBody'
 import Form from './Form'
+import Footer from './Footer'
 
 class App extends React.Component {
   constructor () {
@@ -32,6 +33,7 @@ class App extends React.Component {
         <>
           <Header />
           <ArticleBody image={this.state.imgSrc} words={this.state.words} />
+          <Footer />
         </>
         }
       </>
