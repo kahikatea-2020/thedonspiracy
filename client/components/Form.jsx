@@ -33,7 +33,7 @@ class Form extends React.Component {
 
   handleChange (e) {
     this.setState({
-      [e.target.name]: e.target.value.toLowerCase()
+      [e.target.name]: e.target.value
     })
   }
 
@@ -50,6 +50,12 @@ class Form extends React.Component {
       </div>
       <div className="formBody">
         <div className='create-article'>
+          <div className="instructions">
+            <p>Hey there junior reporter!</p>
+            <p>Welcome to your first day on the job. We’re glad to have you on board. </p>
+            <p>Your first assignment is to investigate some sketchy goings-on in the local area and report back to us. We will then formulate your findings into a news article that you can read online and share with your friends!</p>
+          </div>
+          
           <div className="notepad">
           <img src="/images/notepad.png" />
           <div className='container'>

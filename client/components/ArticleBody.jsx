@@ -17,19 +17,19 @@ class ArticleBody extends React.Component {
           <div className="articleImage">
             <img src={image} alt={image} />
           </div>
-          <p className="paragraph"> Breaking news! Students at Enspiral Dev Academy have noticed some {words.adj1} goings on surrounding their teacher Don Smith. Smith has been suspected of receiving {words.pln1} from the linux foundation in exchange for pushing the {words.adj2} agenda of the Mozilla Corporation.
+          <p className="paragraph"> Breaking news! Students at Enspiral Dev Academy have noticed some <span className='to-lower-case'>{words.adj1}</span> goings on surrounding their teacher Don Smith. Smith has been suspected of receiving <span className='to-lower-case'>{words.pln1}</span> from the linux foundation in exchange for pushing the <span className='to-lower-case'>{words.adj2}</span> agenda of the Mozilla Corporation.
           </p>
           <p className="paragraph">
-            Mozilla has been exposed for attempting to brainwash {words.pln2} into using Firefox instead of Chrome, which everybody knows is extremely {words.adj3}.
+            Mozilla has been exposed for attempting to brainwash <span className ='to-lower-case'>{words.pln2}</span> into using Firefox instead of Chrome, which everybody knows is extremely <span className='to-lower-case'>{words.adj3}</span>.
           </p>
           <p className="paragraph">
-           Bob Ross has come forward this week about Smiths activities and was quoted saying “This is no longer a happy little accident. We have reason to believe Don was at {words.place1} with {words.name1} and {words.noun1} were exchanged, we think to further his understanding of SuperCollider”.
+           Bob Ross has come forward this week about Smiths activities and was quoted saying “This is no longer a happy little accident. We have reason to believe Don was at {words.place1} with <span className='capitalise'>{words.name1}</span> and <span className='to-lower-case'>{words.noun1}</span> were exchanged, we think to further his understanding of SuperCollider”.
           </p>
           <p className="paragraph">
-            A {words.noun2} on the scene had this to say: “It was all so {words.adj4}. We tried to {words.verbpresent} but the Linux start sound will haunt me for the rest of my life. Another witness claimed that it reminded him of that one time that {words.name2}’s {words.noun3} {words.verbpast}.
+            A {words.noun2} on the scene had this to say: “It was all so <span className='to-lower-case'>{words.adj4}</span>. We tried to <span className='to-lower-case'>{words.verbpresent}</span> but the Linux start sound will haunt me for the rest of my life. Another witness claimed that it reminded him of that one time that <span className='capitalise'>{words.name2}</span>’s <span className='to-lower-case'>{words.noun3}</span> <span className='to-lower-case'>{words.verbpast}</span>.
           </p>
           <p className="paragraph">
-            JO$EPH QUE$TED is currently being held for questioning at the {words.place2} police station. Police have refused to comment claiming that the {words.noun4} committee  is {words.verbpresent} this very closely, but the situation is still under investigation. Jacinda Ardern has urged the {words.pln2} to stop panic buying {words.noun5}. “For the love of {words.pln3} just stop.”
+            JO$EPH QUE$TED is currently being held for questioning at the {words.place2} police station. Police have refused to comment claiming that the <span className='to-lower-case'>{words.noun4}</span> committee  is <span className='to-lower-case'>{words.verbpresent}</span> this very closely, but the situation is still under investigation. Jacinda Ardern has urged the <span className='to-lower-case'>{words.pln2}</span> to stop panic buying <span className='to-lower-case'>{words.noun5}</span>. “For the love of <span className='to-lower-case'>{words.pln3}</span> just stop.”
           </p>
 
         </div>

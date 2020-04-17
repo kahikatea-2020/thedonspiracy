@@ -220,3 +220,21 @@ background: linear-gradient(90deg, rgba(240,11,11,1) 0%, rgba(255,154,0,1) 17%, 
     margin-top: 800px;
     margin-bottom: 50px;
 }
+
+.instructions {
+    color: greenyellow;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.to-lower-case {
+    text-transform: lowercase;
+}
+
+.capitalise {
+    text-transform: capitalize;
+}
