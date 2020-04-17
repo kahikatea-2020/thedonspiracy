@@ -27,7 +27,7 @@ class App extends React.Component {
   render () {
     return (
       <>
-        {this.state.form && <Form generateImage={this.generateArticle}/>}
+        {this.state.form && <Form generateArticle={this.generateArticle}/>}
         {this.state.article &&
         <>
           <Header />
