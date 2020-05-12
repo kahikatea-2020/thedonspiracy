@@ -1,12 +1,16 @@
-import React, {useState} from 'react'
+import React from 'react'
+import { connect } from 'react-redux'
 
-function Show (){
-  const [count, setCount] = useState(2);
+function Show ({dispatch, myCount }){
   return(
 <div className="show">
-  <button onClick={() => setCount(count + 1)}>{count}</button>
+  <button onClick={() => null}>{myCount}</button>
 </div>
   )
 }
 
-export default Show
+const mapStateToProps = state => ({
+    myCount: state.count
+})
+
+export default connect(mapStateToProps)(Show)
