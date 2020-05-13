@@ -6,7 +6,7 @@ const initialState = {
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'INCREASE_COUNT':
+    case INCREASE_COUNT:
       return {
         ...state,
         count: state.count +1,
