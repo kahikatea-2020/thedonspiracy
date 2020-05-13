@@ -6,6 +6,7 @@ import { HashRouter as Router } from 'react-router-dom'
 import thunkMiddleware from 'redux-thunk'
 
 import reducers from './reducers'
+import actions from './actions'
 import App from './components/App'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
